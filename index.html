@@ -79,78 +79,111 @@
   <main>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-compass-800 via-compass-700 to-compass-900 text-white overflow-hidden">
-      <!-- Background pattern -->
-      <div class="absolute inset-0 opacity-10" aria-hidden="true">
-        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+    <section class="relative bg-gradient-to-b from-compass-800 via-compass-900 to-compass-900 text-white overflow-hidden">
+      <!-- Subtle pipe accents -->
+      <div class="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        <svg class="absolute -left-24 -top-10 w-[420px] h-[420px] opacity-[0.12]" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-10 380 C 80 280, 140 180, 260 40" stroke="url(#pipeLeft)" stroke-width="36" stroke-linecap="round"/>
+          <path d="M30 400 C 110 310, 170 220, 290 70" stroke="url(#pipeLeftInner)" stroke-width="14" stroke-linecap="round" opacity="0.5"/>
           <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>
-            </pattern>
+            <linearGradient id="pipeLeft" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#64748b"/>
+              <stop offset="45%" stop-color="#cbd5e1"/>
+              <stop offset="100%" stop-color="#475569"/>
+            </linearGradient>
+            <linearGradient id="pipeLeftInner" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#334155"/>
+              <stop offset="100%" stop-color="#94a3b8"/>
+            </linearGradient>
           </defs>
-          <rect width="100%" height="100%" fill="url(#grid)"/>
         </svg>
+        <svg class="absolute -right-24 -top-10 w-[420px] h-[420px] opacity-[0.12] scale-x-[-1]" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-10 380 C 80 280, 140 180, 260 40" stroke="url(#pipeRight)" stroke-width="36" stroke-linecap="round"/>
+          <path d="M30 400 C 110 310, 170 220, 290 70" stroke="url(#pipeRightInner)" stroke-width="14" stroke-linecap="round" opacity="0.5"/>
+          <defs>
+            <linearGradient id="pipeRight" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#64748b"/>
+              <stop offset="45%" stop-color="#cbd5e1"/>
+              <stop offset="100%" stop-color="#475569"/>
+            </linearGradient>
+            <linearGradient id="pipeRightInner" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#334155"/>
+              <stop offset="100%" stop-color="#94a3b8"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="absolute bottom-0 right-0 w-64 h-64 opacity-[0.08]">
+          <svg viewBox="0 0 200 200" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M180 20 C 120 80, 80 120, 20 180" stroke="#94a3b8" stroke-width="22" stroke-linecap="round"/>
+          </svg>
+        </div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-          <!-- Trust badge -->
-          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
-            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-            <span class="text-sm font-medium text-compass-100">Licensed &amp; Insured · Serving Greater Omaha</span>
-          </div>
-
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
-            Omaha's Trusted<br>
-            <span class="text-accent-400">Plumbing Experts</span>
-          </h1>
-
-          <p class="text-lg sm:text-xl text-compass-100 leading-relaxed mb-10 max-w-2xl">
-            From burst pipes to water heater installs — Compass Plumbing LLC delivers fast, reliable service with upfront pricing and a satisfaction guarantee.
-          </p>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="tel:+14026205826"
-               class="inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-200 ring-4 ring-red-600/30 hover:ring-red-500/40">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
-              </svg>
-              Emergency? Call Now
-            </a>
-            <a href="#booking"
-               class="inline-flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 text-compass-900 font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition-all duration-200">
-              Schedule Online
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Social proof -->
-          <div class="mt-12 flex flex-wrap items-center gap-6 text-compass-200 text-sm">
-            <div class="flex items-center gap-1.5">
-              <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-              </svg>
-              <span><strong class="text-white">5</strong> Google Rating</span>
+            <!-- Trust badge -->
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
+              <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+              <span class="text-sm font-medium text-compass-100">Licensed, Bonded &amp; Insured · Serving Greater Omaha</span>
             </div>
-            <div class="hidden sm:block w-px h-4 bg-compass-500"></div>
-            <span>15+ Years Experience</span>
-            <div class="hidden sm:block w-px h-4 bg-compass-500"></div>
-            <span>Same-Day Service Available</span>
-          </div>
+
+            <p class="lg:hidden text-lg text-compass-100 italic leading-relaxed mb-6 max-w-2xl">
+              Here to navigate your plumbing in the <span class="text-accent-400 font-semibold not-italic">right</span> direction.
+            </p>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
+              Omaha's Trusted<br>
+              <span class="text-accent-400">Plumbing Experts</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-compass-100 leading-relaxed mb-10 max-w-2xl">
+              From burst pipes to water heater installs — Compass Plumbing LLC delivers fast, reliable service with honest pricing and a satisfaction guarantee.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="tel:+14026205826"
+                 class="inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-200 ring-4 ring-red-600/30 hover:ring-red-500/40">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                </svg>
+                Emergency? Call Now
+              </a>
+              <a href="#booking"
+                 class="inline-flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 text-compass-900 font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition-all duration-200">
+                Schedule Online
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Social proof -->
+            <div class="mt-12 flex flex-wrap items-center gap-6 text-compass-200 text-sm">
+              <div class="flex items-center gap-1.5">
+                <svg class="w-5 h-5 text-accent-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <span><strong class="text-white">5</strong> Google Rating</span>
+              </div>
+              <div class="hidden sm:block w-px h-4 bg-compass-500"></div>
+              <span>15+ Years Experience</span>
+              <div class="hidden sm:block w-px h-4 bg-compass-500"></div>
+              <span>Same-Day Service Available</span>
+            </div>
           </div>
 
-          <!-- Hero Logo -->
-          <div class="hidden lg:flex justify-center items-center">
+          <!-- Logo & Tagline -->
+          <div class="hidden lg:flex flex-col items-center justify-center text-center">
             <img src="images/compass-plumbing-logo.png?v=4"
-                 alt=""
-                 aria-hidden="true"
+                 alt="Compass Plumbing LLC"
                  class="w-full max-w-md h-auto drop-shadow-2xl"
                  width="400"
                  height="160">
+            <p class="mt-6 text-lg sm:text-xl text-compass-100 italic leading-relaxed max-w-sm">
+              Here to navigate your plumbing in the <span class="text-accent-400 font-semibold not-italic">right</span> direction.
+            </p>
           </div>
         </div>
       </div>
@@ -231,46 +264,24 @@
       </div>
     </section>
 
-    <!-- Calendly Booking Section -->
+    <!-- Scheduling Section -->
     <section id="booking" class="py-20 lg:py-28 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10">
-          <h2 class="text-3xl sm:text-4xl font-bold text-compass-800 mb-4">Schedule Your Service</h2>
-          <p class="text-lg text-gray-600">Pick a time that works for you. We'll confirm your appointment and send a reminder before we arrive.</p>
+      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center justify-center w-14 h-14 bg-compass-50 rounded-full mb-5">
+          <svg class="w-7 h-7 text-compass-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
         </div>
-
-        <!-- Calendly Embed Placeholder -->
-        <div class="bg-gray-50 border-2 border-dashed border-gray-300 rounded-2xl overflow-hidden shadow-inner">
-          <div class="p-6 sm:p-8 text-center border-b border-gray-200 bg-white">
-            <div class="inline-flex items-center justify-center w-12 h-12 bg-compass-50 rounded-full mb-3">
-              <svg class="w-6 h-6 text-compass-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-              </svg>
-            </div>
-            <p class="text-sm font-semibold text-compass-600 uppercase tracking-wider mb-1">Calendly Widget</p>
-            <p class="text-gray-500 text-sm">Replace this placeholder with your Calendly inline embed code.</p>
-          </div>
-
-          <!--
-            To activate: replace the div below with your Calendly inline embed, e.g.:
-
-            <div class="calendly-inline-widget"
-                 data-url="https://calendly.com/your-compass-plumbing-link"
-                 style="min-width:320px;height:700px;">
-            </div>
-            <script type="text/javascript"
-                    src="https://assets.calendly.com/assets/external/widget.js"
-                    async>
-            </script>
-          -->
-          <div class="flex flex-col items-center justify-center min-h-[480px] sm:min-h-[600px] p-8 text-gray-400">
-            <svg class="w-16 h-16 mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-            </svg>
-            <p class="text-lg font-medium text-gray-500">Booking calendar will appear here</p>
-            <p class="text-sm mt-2 max-w-sm text-center">Paste your Calendly embed snippet into this section to enable online scheduling.</p>
-          </div>
-        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-compass-800 mb-4">Schedule Your Service</h2>
+        <p class="text-xl text-compass-600 font-semibold mb-3">Online scheduling coming soon</p>
+        <p class="text-lg text-gray-600 mb-8">Need service now? Call us directly and we'll get you on the schedule.</p>
+        <a href="tel:+14026205826"
+           class="inline-flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-compass-900 font-bold px-8 py-3.5 rounded-xl shadow-lg transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          (402) 620-5826
+        </a>
       </div>
     </section>
 
@@ -279,7 +290,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
         <div>
           <h2 class="text-2xl font-bold text-white mb-1">Need a plumber today?</h2>
-          <p class="text-compass-200">Free estimates on replacements · Upfront flat-rate pricing on repairs</p>
+          <p class="text-compass-200">Free estimates on replacements · Honest flat-rate pricing on repairs</p>
         </div>
         <a href="tel:+14026205826"
            class="inline-flex items-center gap-2 bg-white text-compass-700 hover:bg-compass-50 font-bold px-8 py-3.5 rounded-xl shadow-lg transition-colors shrink-0">
@@ -316,7 +327,7 @@
             <svg class="w-5 h-5 text-accent-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
-            <a href="mailto:info@compassplumbingomaha.com" class="hover:text-accent-400 transition-colors" itemprop="email">info@compassplumbingomaha.com</a>
+            <a href="mailto:getservice@compassplumbingne.com" class="hover:text-accent-400 transition-colors" itemprop="email">getservice@compassplumbingne.com</a>
           </p>
           <meta itemprop="areaServed" content="Valley, NE">
         </div>
@@ -366,7 +377,7 @@
       <!-- Bottom bar -->
       <div class="mt-12 pt-8 border-t border-compass-700 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-compass-400">
         <p>&copy; 2026 Compass Plumbing LLC. All rights reserved.</p>
-        <p>Licensed · Bonded · Insured · Nebraska Contractor #PL-48291</p>
+        <p>Licensed · Bonded · Insured · Nebraska Contractor #90883-26</p>
       </div>
     </div>
   </footer>
@@ -380,7 +391,7 @@
     "image": "images/compass-plumbing-logo.png?v=4",
     "url": "",
     "telephone": "+1-402-620-5826",
-    "email": "info@compassplumbingomaha.com",
+    "email": "getservice@compassplumbingne.com",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
